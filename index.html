@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+    <title>RESTful Client</title>
+  </head>
+  <body>
+    <br>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="input-group">
+            <span class="input-group-addon">URL</span>
+            <input type="text" class="form-control" id="url">
+          </div>
+        </div>
+        <div class="col-xs-12"><hr></div>
+        <div class="col-xs-6" id="form">
+          <form class="form-inline">
+            <select class="form-control" id="n" disabled>
+              <option disabled selected>-- Número de variables --</option>
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+            </select>
+            <select class="form-control" id="t" disabled>
+              <option value="POST">POST</option>
+              <option value="GET">GET</option>
+            </select>
+            <button type="button" class="btn btn-primary" disabled>Enviar</button>
+            <hr>
+          </form>
+          <form class="form-horizontal">
+          </form>
+        </div>
+        <div class="col-xs-6" id="resultado">
+          <h1>Envio</h1>
+          <pre id="envio"></pre>
+          <h1>Respuesta</h1>
+          <pre id="respuesta"></pre>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script>window.$ = window.jQuery = require('./js/jquery-3.1.1.min.js');
+    require('./js/bootstrap.min.js');
+    require('./renderer.js');
+  </script>
+</html>

@@ -1,0 +1,31 @@
+{
+  "name": "RESTCLient",
+  "version": "1.0.1",
+  "description": "RESTful Client",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/electron/electron-quick-start",
+  "keywords": [
+    "Electron"
+  ],
+  "author": "Victor Gordillo",
+  "license": "",
+  "devDependencies": {
+    "electron-builder": "^7.14.2",
+    "electron": "^1.4.1"
+  },
+  "dependencies": {
+    "jquery": "^3.1.1"
+  },
+  "standard": {
+    "env": {
+      "jquery": true
+    }
+  },
+  "build": {
+    "appId": "none",
+    "category": "none"
+  }
+}
